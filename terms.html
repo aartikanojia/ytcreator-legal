@@ -3,116 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service - YTCreator</title>
+  <title>Terms of Service – YTCreator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      background: #f7f8fc;
-      color: #1f2937;
+    :root {
+      --red: #ff2d2d;
+      --dark: #0f0f0f;
+      --mid: #1a1a1a;
+      --text: #e8e8e8;
+      --muted: #888;
+      --border: rgba(255,255,255,0.08);
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(--text); min-height: 100vh; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px; border-bottom: 1px solid var(--border);
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-      color: #111827;
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'DM Serif Display', serif; font-size: 1.3rem;
+      color: #fff; text-decoration: none;
     }
-    .updated {
-      color: #6b7280;
-      margin-bottom: 28px;
-      font-size: 14px;
+    .logo-icon {
+      width: 28px; height: 28px; background: var(--red);
+      border-radius: 7px; display: flex; align-items: center; justify-content: center;
     }
-    h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      color: #111827;
-    }
-    p {
-      font-size: 16px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    .footer {
-      margin-top: 32px;
-      font-size: 14px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      padding-top: 16px;
-    }
+    .logo-icon svg { width: 14px; height: 14px; fill: #fff; }
+    nav a.back { color: var(--muted); text-decoration: none; font-size: 0.875rem; }
+    nav a.back:hover { color: var(--text); }
+    .doc { max-width: 720px; margin: 60px auto 80px; padding: 0 24px; }
+    .doc-header { margin-bottom: 48px; }
+    .doc-header .label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--red); font-weight: 600; margin-bottom: 12px; }
+    .doc-header h1 { font-family: 'DM Serif Display', serif; font-size: 2.4rem; color: #fff; margin-bottom: 12px; }
+    .doc-header .meta { font-size: 0.875rem; color: var(--muted); }
+    .section { margin-bottom: 36px; }
+    .section h2 { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .section p, .section li { font-size: 0.9rem; color: var(--muted); line-height: 1.8; }
+    .section ul { padding-left: 20px; margin-top: 8px; }
+    .section li { margin-bottom: 4px; }
+    .highlight { background: var(--mid); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 12px; }
+    .highlight p { font-size: 0.875rem; color: var(--muted); }
+    footer { border-top: 1px solid var(--border); padding: 24px 48px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer p { font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.8rem; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Terms of Service</h1>
-    <div class="updated">Last updated: 4 April 2026</div>
 
-    <p>
-      Welcome to YTCreator. By using our application, you agree to these Terms of Service.
-    </p>
+  <nav>
+    <a href="/" class="logo">
+      <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      YTCreator
+    </a>
+    <a href="/" class="back">← Back to home</a>
+  </nav>
 
-    <h2>1. Use of the App</h2>
-    <p>
-      YTCreator provides insights and analytics for YouTube creators. You agree to use the app only for lawful purposes.
-    </p>
+  <div class="doc">
+    <div class="doc-header">
+      <div class="label">Legal</div>
+      <h1>Terms of Service</h1>
+      <p class="meta">Last updated: 4 April 2026</p>
+    </div>
 
-    <h2>2. User Accounts</h2>
-    <p>
-      You are responsible for maintaining the confidentiality of your account and for all activities under your account.
-    </p>
+    <div class="section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>Welcome to YTCreator. By downloading, installing, or using the YTCreator mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+    </div>
 
-    <h2>3. YouTube Integration</h2>
-    <p>
-      YTCreator uses YouTube API Services. By using the app, you agree to the
-      <a href="https://www.youtube.com/t/terms" target="_blank">YouTube Terms of Service</a>.
-    </p>
+    <div class="section">
+      <h2>2. Description of Service</h2>
+      <p>YTCreator provides YouTube analytics, video performance insights, and AI-powered growth recommendations for YouTube creators. The App connects to your YouTube account via Google OAuth to retrieve channel and video data.</p>
+    </div>
 
-    <h2>4. Payments</h2>
-    <p>
-      Payments are processed via Razorpay. We are not responsible for payment processing errors caused by third-party providers.
-    </p>
+    <div class="section">
+      <h2>3. User Accounts</h2>
+      <ul>
+        <li>YTCreator is currently available on Android only.</li>
+        <li>You must have a valid Google/YouTube account to use the App.</li>
+        <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+        <li>You are responsible for all activities that occur under your account.</li>
+        <li>You must notify us immediately of any unauthorized use of your account.</li>
+      </ul>
+    </div>
 
-    <h2>5. Subscription</h2>
-    <p>
-      Paid features may be offered via subscription. Access is granted based on successful payment and may be revoked if payment fails.
-    </p>
+    <div class="section">
+      <h2>4. YouTube API Integration</h2>
+      <p>YTCreator uses YouTube API Services. By using the App, you agree to the <a href="https://www.youtube.com/t/terms" style="color:var(--red)">YouTube Terms of Service</a>. You can revoke YTCreator's access to your YouTube data at any time via your <a href="https://myaccount.google.com/permissions" style="color:var(--red)">Google Account Security Settings</a>.</p>
+    </div>
 
-    <h2>6. Limitation of Liability</h2>
-    <p>
-      YTCreator is provided "as is". We do not guarantee specific results from analytics or insights.
-    </p>
+    <div class="section">
+      <h2>5. Subscriptions and Payments</h2>
+      <ul>
+        <li>YTCreator offers a free tier and a Pro subscription with additional features.</li>
+        <li>Payments are processed securely by <strong style="color:var(--text)">Razorpay</strong>. We do not store your payment card details.</li>
+        <li>Subscription fees are charged at the time of purchase and at the start of each renewal period.</li>
+        <li>Subscriptions renew automatically unless cancelled before the renewal date.</li>
+        <li>You can cancel your subscription at any time from within the App or by contacting us.</li>
+      </ul>
+      <div class="highlight">
+        <p>For refunds, cancellations, and subscription management, please refer to our <a href="./refund.html" style="color:var(--red)">Refund & Cancellation Policy</a>.</p>
+      </div>
+    </div>
 
-    <h2>7. Termination</h2>
-    <p>
-      We may suspend or terminate access if users violate these terms.
-    </p>
+    <div class="section">
+      <h2>6. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the App for any unlawful purpose or in violation of any applicable laws.</li>
+        <li>Attempt to reverse-engineer, decompile, or tamper with the App.</li>
+        <li>Use the App to scrape, harvest, or misuse YouTube data beyond the intended features.</li>
+        <li>Misrepresent your identity or impersonate any person or entity.</li>
+      </ul>
+    </div>
 
-    <h2>8. Changes</h2>
-    <p>
-      We may update these terms from time to time.
-    </p>
+    <div class="section">
+      <h2>7. Intellectual Property</h2>
+      <p>All content, features, and functionality of the YTCreator App — including but not limited to design, code, logos, and text — are the exclusive property of YTCreator and protected by applicable intellectual property laws.</p>
+    </div>
 
-    <h2>9. Contact</h2>
-    <p>
-      For any questions, contact:
-      <a href="mailto:girlsmilewith.kanojia@gmail.com">girlsmilewith.kanojia@gmail.com</a>
-    </p>
+    <div class="section">
+      <h2>8. Limitation of Liability</h2>
+      <p>YTCreator is provided "as is" without warranties of any kind. We do not guarantee specific outcomes from the analytics or insights provided. To the maximum extent permitted by law, YTCreator shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
+    </div>
 
-    <div class="footer">
-      © 2026 YTCreator. All rights reserved.
+    <div class="section">
+      <h2>9. Termination</h2>
+      <p>We reserve the right to suspend or terminate your access to the App at any time, with or without notice, if you violate these Terms or engage in conduct that we determine to be harmful to the App, other users, or third parties.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. We will notify you of significant changes via email or in-app notification. Continued use of the App after changes are posted constitutes your acceptance of the updated Terms.</p>
+    </div>
+
+    <div class="section">
+      <h2>11. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of New Delhi, India.</p>
+    </div>
+
+    <div class="section">
+      <h2>12. Contact Us</h2>
+      <div class="highlight">
+        <p>For any questions about these Terms, contact us at:<br><br>
+        <strong style="color:var(--text)">YTCreator</strong><br>
+        Email: <a href="mailto:girlsmilewith.kanojia@gmail.com" style="color:var(--red)">girlsmilewith.kanojia@gmail.com</a><br>
+        New Delhi, India</p>
+      </div>
     </div>
   </div>
+
+  <footer>
+    <p>© 2026 YTCreator. All rights reserved.</p>
+    <p><a href="/">Home</a> · <a href="./privacy.html">Privacy Policy</a> · <a href="./refund.html">Refund Policy</a></p>
+  </footer>
+
 </body>
 </html>
