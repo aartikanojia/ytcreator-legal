@@ -3,144 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - YTCreator</title>
+  <title>Privacy Policy – YTCreator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      background: #f7f8fc;
-      color: #1f2937;
+    :root {
+      --red: #ff2d2d;
+      --dark: #0f0f0f;
+      --mid: #1a1a1a;
+      --text: #e8e8e8;
+      --muted: #888;
+      --border: rgba(255,255,255,0.08);
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(--text); min-height: 100vh; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px; border-bottom: 1px solid var(--border);
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-      color: #111827;
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'DM Serif Display', serif; font-size: 1.3rem;
+      color: #fff; text-decoration: none;
     }
-    .updated {
-      color: #6b7280;
-      margin-bottom: 28px;
-      font-size: 14px;
+    .logo-icon {
+      width: 28px; height: 28px; background: var(--red);
+      border-radius: 7px; display: flex; align-items: center; justify-content: center;
     }
-    h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      color: #111827;
+    .logo-icon svg { width: 14px; height: 14px; fill: #fff; }
+    nav a.back { color: var(--muted); text-decoration: none; font-size: 0.875rem; }
+    nav a.back:hover { color: var(--text); }
+    .doc {
+      max-width: 720px; margin: 60px auto 80px; padding: 0 24px;
     }
-    p, li {
-      font-size: 16px;
+    .doc-header { margin-bottom: 48px; }
+    .doc-header .label {
+      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--red); font-weight: 600; margin-bottom: 12px;
     }
-    ul {
-      padding-left: 20px;
+    .doc-header h1 {
+      font-family: 'DM Serif Display', serif; font-size: 2.4rem;
+      color: #fff; margin-bottom: 12px;
     }
-    a {
-      color: #2563eb;
-      text-decoration: none;
+    .doc-header .meta { font-size: 0.875rem; color: var(--muted); }
+    .section { margin-bottom: 36px; }
+    .section h2 {
+      font-size: 1rem; font-weight: 600; color: #fff;
+      margin-bottom: 12px; padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
     }
-    a:hover {
-      text-decoration: underline;
+    .section p, .section li {
+      font-size: 0.9rem; color: var(--muted); line-height: 1.8;
     }
-    .footer {
-      margin-top: 32px;
-      font-size: 14px;
-      color: #6b7280;
-      border-top: 1px solid #e5e7eb;
-      padding-top: 16px;
+    .section ul { padding-left: 20px; margin-top: 8px; }
+    .section li { margin-bottom: 4px; }
+    .highlight {
+      background: var(--mid); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px 24px; margin-top: 12px;
     }
+    .highlight p { font-size: 0.875rem; color: var(--muted); }
+    .highlight a { color: var(--red); }
+    footer {
+      border-top: 1px solid var(--border); padding: 24px 48px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    }
+    footer p { font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.8rem; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy for YTCreator</h1>
-    <div class="updated">Last updated: 4 April 2026</div>
 
-    <p>
-      YTCreator ("we", "our", or "us") operates the YTCreator mobile application.
-      This Privacy Policy explains how we collect, use, and protect your information.
-    </p>
+  <nav>
+    <a href="/" class="logo">
+      <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      YTCreator
+    </a>
+    <a href="/" class="back">← Back to home</a>
+  </nav>
 
-    <h2>1. Information We Collect</h2>
-    <p>We may collect the following information:</p>
-    <ul>
-      <li>Name and email address (via Google Sign-In)</li>
-      <li>YouTube channel data (via YouTube API)</li>
-      <li>Device information</li>
-      <li>Usage data</li>
-    </ul>
+  <div class="doc">
+    <div class="doc-header">
+      <div class="label">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: 4 April 2026</p>
+    </div>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use your information to:</p>
-    <ul>
-      <li>Provide video analysis and insights</li>
-      <li>Improve user experience</li>
-      <li>Communicate important updates</li>
-    </ul>
+    <div class="section">
+      <h2>1. Overview</h2>
+      <p>YTCreator ("we", "our", or "us") operates the YTCreator mobile application available on iOS and Android. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our app.</p>
+    </div>
 
-    <h2>3. YouTube API Services</h2>
-    <p>
-      YTCreator uses YouTube API Services. By using YTCreator, you also agree to the
-      <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.
-    </p>
-    <p>
-      We access YouTube data only to provide insights, analytics, and creator-focused features inside the app.
-    </p>
+    <div class="section">
+      <h2>2. Information We Collect</h2>
+      <p>We may collect the following information:</p>
+      <ul>
+        <li>Name and email address (via Google Sign-In)</li>
+        <li>YouTube channel data (via YouTube Data API and YouTube Analytics API)</li>
+        <li>Device information (device type, OS version)</li>
+        <li>App usage data (features used, session duration)</li>
+        <li>Payment information (processed by Razorpay; we do not store card details)</li>
+      </ul>
+    </div>
 
-    <h2>4. Google OAuth</h2>
-    <p>
-      We use Google OAuth to authenticate users securely. We do not store your Google password.
-    </p>
+    <div class="section">
+      <h2>3. How We Use Your Information</h2>
+      <ul>
+        <li>To provide video analytics and performance insights</li>
+        <li>To personalise recommendations based on your channel data</li>
+        <li>To process subscription payments securely</li>
+        <li>To send important app updates and push notifications</li>
+        <li>To improve user experience and fix issues</li>
+      </ul>
+    </div>
 
-    <h2>5. Third-Party Services</h2>
-    <p>We may use the following third-party services:</p>
-    <ul>
-      <li>Google (OAuth and YouTube API)</li>
-      <li>Firebase (notifications)</li>
-      <li>Razorpay (payments)</li>
-    </ul>
-    <p>
-      These services may collect and process data according to their own privacy policies.
-    </p>
+    <div class="section">
+      <h2>4. YouTube API Services</h2>
+      <p>YTCreator uses YouTube API Services provided by Google. By using YTCreator, you also agree to the <a href="https://www.youtube.com/t/terms" style="color:var(--red)">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy" style="color:var(--red)">Google Privacy Policy</a>.</p>
+      <div class="highlight">
+        <p>We access YouTube data exclusively to provide insights, analytics, and creator-focused features inside the app. We do not share, sell, or transfer your YouTube data to any third party for advertising or any unrelated purpose.</p>
+      </div>
+    </div>
 
-    <h2>6. Data Security</h2>
-    <p>
-      We take reasonable measures to protect your data and maintain the security of the information we process.
-    </p>
+    <div class="section">
+      <h2>5. Google OAuth</h2>
+      <p>We use Google OAuth 2.0 to authenticate users securely. We do not store your Google password. Authentication tokens are stored securely on your device.</p>
+    </div>
 
-    <h2>7. User Rights</h2>
-    <p>You may request to:</p>
-    <ul>
-      <li>Access your data</li>
-      <li>Update your data</li>
-      <li>Delete your data</li>
-    </ul>
+    <div class="section">
+      <h2>6. Payments</h2>
+      <p>Payments for Pro subscriptions are processed by <strong style="color:var(--text)">Razorpay</strong>. We do not store your credit/debit card details or banking information. All payment data is handled by Razorpay in accordance with PCI-DSS standards. For Razorpay's privacy practices, refer to <a href="https://razorpay.com/privacy/" style="color:var(--red)">Razorpay's Privacy Policy</a>.</p>
+    </div>
 
-    <h2>8. Children's Privacy</h2>
-    <p>
-      YTCreator is not intended for children under the age of 13.
-    </p>
+    <div class="section">
+      <h2>7. Third-Party Services</h2>
+      <p>We use the following third-party services:</p>
+      <ul>
+        <li><strong style="color:var(--text)">Google</strong> – OAuth authentication and YouTube API access</li>
+        <li><strong style="color:var(--text)">Firebase</strong> – Push notifications and analytics</li>
+        <li><strong style="color:var(--text)">Razorpay</strong> – Payment processing</li>
+      </ul>
+      <p style="margin-top:10px">Each of these services may collect and process data according to their own privacy policies.</p>
+    </div>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. Any updates will be posted on this page.
-    </p>
+    <div class="section">
+      <h2>8. Data Security</h2>
+      <p>We implement industry-standard security measures to protect your data, including encrypted transmission (HTTPS/TLS), secure token storage, and access controls. However, no method of transmission over the internet is 100% secure.</p>
+    </div>
 
-    <h2>10. Contact Us</h2>
-    <p>
-      If you have questions about this Privacy Policy, contact us at:
-      <a href="mailto:girlsmilewith.kanojia@gmail.com">girlsmilewith.kanojia@gmail.com</a>
-    </p>
+    <div class="section">
+      <h2>9. Your Rights</h2>
+      <p>You may request to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Correct inaccurate data</li>
+        <li>Delete your account and associated data</li>
+        <li>Revoke YouTube API access from your Google Account settings</li>
+      </ul>
+      <p style="margin-top:10px">To submit a request, email us at <a href="mailto:girlsmilewith.kanojia@gmail.com" style="color:var(--red)">girlsmilewith.kanojia@gmail.com</a>.</p>
+    </div>
 
-    <div class="footer">
-      © 2026 YTCreator. All rights reserved.
+    <div class="section">
+      <h2>10. Children's Privacy</h2>
+      <p>YTCreator is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+    </div>
+
+    <div class="section">
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any significant changes will be communicated via email or in-app notification. The "Last updated" date at the top of this page will always reflect the most recent version.</p>
+    </div>
+
+    <div class="section">
+      <h2>12. Contact Us</h2>
+      <div class="highlight">
+        <p>For any privacy-related questions or requests, contact us at:<br><br>
+        <strong style="color:var(--text)">YTCreator</strong><br>
+        Email: <a href="mailto:girlsmilewith.kanojia@gmail.com">girlsmilewith.kanojia@gmail.com</a><br>
+        New Delhi, India</p>
+      </div>
     </div>
   </div>
+
+  <footer>
+    <p>© 2026 YTCreator. All rights reserved.</p>
+    <p><a href="/">Home</a> · <a href="./terms.html">Terms</a> · <a href="./refund.html">Refund Policy</a></p>
+  </footer>
+
 </body>
 </html>
