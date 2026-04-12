@@ -49,8 +49,16 @@
     }
     .highlight p { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
     .summary-table {
-      width: 100%; border-collapse: collapse; margin-top: 16px;
+      width: 100%; border-collapse: collapse; margin-top: 0;
+      min-width: 560px;
       font-size: 0.875rem;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
     }
     .summary-table th {
       background: var(--mid); color: var(--text);
@@ -64,6 +72,39 @@
     footer { border-top: 1px solid var(--border); padding: 24px 48px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
     footer p { font-size: 0.8rem; color: var(--muted); }
     footer a { color: var(--muted); text-decoration: none; font-size: 0.8rem; }
+
+    @media (max-width: 800px) {
+      nav {
+        padding: 16px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav a.back { font-size: 0.82rem; }
+      .doc {
+        margin: 40px auto 56px;
+        padding: 0 18px;
+      }
+      .doc-header { margin-bottom: 32px; }
+      .doc-header h1 { font-size: clamp(1.8rem, 8vw, 2.2rem); }
+      .section { margin-bottom: 28px; }
+      .highlight { padding: 16px 18px; }
+      footer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section h2 { font-size: 0.95rem; }
+      .section p, .section li {
+        font-size: 0.88rem;
+        line-height: 1.7;
+      }
+      .highlight p { font-size: 0.86rem; }
+      .summary-table { font-size: 0.82rem; }
+      .summary-table th, .summary-table td { padding: 8px 12px; }
+    }
   </style>
 </head>
 <body>
@@ -144,43 +185,45 @@
 
     <div class="section">
       <h2>7. Summary</h2>
-      <table class="summary-table">
-        <tr>
-          <th>Scenario</th>
-          <th>Refund Eligible?</th>
-          <th>Processing Time</th>
-        </tr>
-        <tr>
-          <td>Duplicate / accidental payment</td>
-          <td>✅ Yes</td>
-          <td>5–7 business days</td>
-        </tr>
-        <tr>
-          <td>Charged after Google Play cancellation took effect</td>
-          <td>✅ Yes</td>
-          <td>5–7 business days</td>
-        </tr>
-        <tr>
-          <td>App non-functional (our fault)</td>
-          <td>✅ Yes (case by case)</td>
-          <td>5–7 business days</td>
-        </tr>
-        <tr>
-          <td>Changed mind after purchase</td>
-          <td>❌ No</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Request after 7 days</td>
-          <td>❌ No</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Account terminated (Terms violation)</td>
-          <td>❌ No</td>
-          <td>—</td>
-        </tr>
-      </table>
+      <div class="table-wrap">
+        <table class="summary-table">
+          <tr>
+            <th>Scenario</th>
+            <th>Refund Eligible?</th>
+            <th>Processing Time</th>
+          </tr>
+          <tr>
+            <td>Duplicate / accidental payment</td>
+            <td>✅ Yes</td>
+            <td>5–7 business days</td>
+          </tr>
+          <tr>
+            <td>Charged after Google Play cancellation took effect</td>
+            <td>✅ Yes</td>
+            <td>5–7 business days</td>
+          </tr>
+          <tr>
+            <td>App non-functional (our fault)</td>
+            <td>✅ Yes (case by case)</td>
+            <td>5–7 business days</td>
+          </tr>
+          <tr>
+            <td>Changed mind after purchase</td>
+            <td>❌ No</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Request after 7 days</td>
+            <td>❌ No</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Account terminated (Terms violation)</td>
+            <td>❌ No</td>
+            <td>—</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <div class="section">
