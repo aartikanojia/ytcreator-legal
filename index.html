@@ -42,18 +42,16 @@
       text-decoration: none;
     }
     .logo-icon {
-      width: 32px; height: 32px;
-      background: linear-gradient(135deg, #38bdf8, #6366f1);
-      border: 1px solid rgba(255,255,255,0.18);
+      width: 36px; height: 36px;
       border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 24px rgba(56, 189, 248, 0.18);
+      overflow: hidden;
+      flex-shrink: 0;
     }
-    .logo-icon span {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: #f8fafc;
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
     }
     .nav-links { display: flex; gap: 8px; }
     .nav-links a {
@@ -276,7 +274,7 @@
 
   <nav>
     <a href="https://creatorpilot.online/" class="logo">
-      <div class="logo-icon"><span>CP</span></div>
+      <div class="logo-icon"><img src="./creatorpilot_logo.png" alt="CreatorPilot AI logo" /></div>
       CreatorPilot AI
     </a>
     <div class="nav-links">
