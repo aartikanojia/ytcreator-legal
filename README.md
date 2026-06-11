@@ -1,10 +1,10 @@
-# YTCreator AI Legal Website
+# CreatorPilot AI Legal Website
 
-This repository hosts the public static legal and branding pages for **YTCreator AI**.
+This repository hosts the public static legal and branding pages for **CreatorPilot AI**.
 
 ## Domain
 
-- `ytcreator.app`
+- `creatorpilot.online`
 
 ## Pages
 
@@ -17,5 +17,5 @@ This repository hosts the public static legal and branding pages for **YTCreator
 ## Notes
 
 - The site is built with static HTML/CSS (no frontend framework).
-- Branding across public pages is standardized to **YTCreator AI**.
+- Branding across public pages is standardized to **CreatorPilot AI**.
 - Support contact remains: `girlsmilewith.kanojia@gmail.com`.
