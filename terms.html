@@ -27,10 +27,19 @@
       color: #fff; text-decoration: none;
     }
     .logo-icon {
-      width: 28px; height: 28px; background: var(--red);
-      border-radius: 7px; display: flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 24px rgba(56, 189, 248, 0.18);
     }
-    .logo-icon svg { width: 14px; height: 14px; fill: #fff; }
+    .logo-icon span {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #f8fafc;
+    }
     nav a.back { color: var(--muted); text-decoration: none; font-size: 0.875rem; }
     nav a.back:hover { color: var(--text); }
     .doc { max-width: 720px; margin: 60px auto 80px; padding: 0 24px; }
@@ -85,7 +94,7 @@
 
   <nav>
     <a href="https://creatorpilot.online/" class="logo">
-      <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="logo-icon"><span>CP</span></div>
       CreatorPilot AI
     </a>
     <a href="https://creatorpilot.online/" class="back">← Back to home</a>
