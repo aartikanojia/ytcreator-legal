@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CreatorPilot AI</title>
   <meta name="description" content="AI-powered creator assistant for channel insights, video analysis, and growth recommendations." />
+  <meta property="og:title" content="CreatorPilot AI" />
+  <meta property="og:description" content="AI-powered creator assistant for channel insights, video analysis, and growth recommendations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://creatorpilot.online/" />
+  <meta property="og:image" content="https://creatorpilot.online/creatorpilot_logo.png" />
+  <meta property="og:site_name" content="CreatorPilot AI" />
+  <link rel="icon" type="image/png" href="./creatorpilot_logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>
@@ -35,23 +42,19 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.4rem;
+      gap: 12px;
       color: #fff;
       text-decoration: none;
     }
     .logo-icon {
-      width: 36px; height: 36px;
-      border-radius: 10px;
-      overflow: hidden;
+      width: clamp(124px, 18vw, 168px);
       flex-shrink: 0;
     }
     .logo-icon img {
       width: 100%;
-      height: 100%;
+      height: auto;
       display: block;
-      object-fit: cover;
+      object-fit: contain;
     }
     .nav-links { display: flex; gap: 8px; }
     .nav-links a {
@@ -273,9 +276,8 @@
 <body>
 
   <nav>
-    <a href="https://creatorpilot.online/" class="logo">
-      <div class="logo-icon"><img src="./creatorpilot_logo.png" alt="CreatorPilot AI logo" /></div>
-      CreatorPilot AI
+    <a href="https://creatorpilot.online/" class="logo" aria-label="CreatorPilot AI">
+      <div class="logo-icon"><img src="./creatorpilot_logo.png" alt="CreatorPilot AI Logo" /></div>
     </a>
     <div class="nav-links">
       <a href="https://creatorpilot.online/privacy.html">Privacy</a>
@@ -348,6 +350,7 @@
 
   <footer>
     <p>© 2026 CreatorPilot AI. All rights reserved.</p>
+    <p><a href="https://creatorpilot.online/privacy.html">Privacy Policy</a> · <a href="https://creatorpilot.online/terms.html">Terms</a> · <a href="https://creatorpilot.online/refund.html">Refund Policy</a> · <a href="https://creatorpilot.online/delete-account.html">Delete Account</a></p>
     <p>Contact: <a href="mailto:girlsmilewith.kanojia@gmail.com">girlsmilewith.kanojia@gmail.com</a></p>
   </footer>
 
